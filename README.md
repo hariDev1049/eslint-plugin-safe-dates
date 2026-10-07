@@ -62,7 +62,7 @@ export default [
 ## Requirements
 
 - ESLint 9 or 10 (flat config)
-- Node.js 20.19 or later
+- Node.js 22.12 or later
 
 ## License
 
