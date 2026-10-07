@@ -1,5 +1,6 @@
 # eslint-plugin-safe-dates
 
+[![CI](https://github.com/hariDev1049/eslint-plugin-safe-dates/actions/workflows/ci.yml/badge.svg)](https://github.com/hariDev1049/eslint-plugin-safe-dates/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-safe-dates)](https://www.npmjs.com/package/eslint-plugin-safe-dates)
 [![license](https://img.shields.io/github/license/hariDev1049/eslint-plugin-safe-dates)](./LICENSE)
 
