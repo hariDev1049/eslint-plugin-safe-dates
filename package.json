@@ -11,6 +11,14 @@
   ],
   "author": "Hariprasad M V",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hariDev1049/eslint-plugin-safe-dates.git"
+  },
+  "homepage": "https://github.com/hariDev1049/eslint-plugin-safe-dates#readme",
+  "bugs": {
+    "url": "https://github.com/hariDev1049/eslint-plugin-safe-dates/issues"
+  },
   "type": "module",
   "exports": {
     ".": {
