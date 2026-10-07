@@ -1,7 +1,7 @@
 # eslint-plugin-safe-dates
 
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-safe-dates)](https://www.npmjs.com/package/eslint-plugin-safe-dates)
-[![license](https://img.shields.io/npm/l/eslint-plugin-safe-dates)](./LICENSE)
+[![license](https://img.shields.io/github/license/hariDev1049/eslint-plugin-safe-dates)](./LICENSE)
 
 ESLint rules that catch timezone bugs in JavaScript date handling — before they reach production.
 
