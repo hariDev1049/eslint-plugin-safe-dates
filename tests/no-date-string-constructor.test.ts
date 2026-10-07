@@ -11,6 +11,11 @@ ruleTester.run("no-date-string-constructor", noDateStringConstructor, {
     "new Date(timestamp)",
     "Date.now()",
     'new Foo("2026-10-07")',
+    'new Date("2026-10-07T00:00:00Z")',
+    'new Date("2026-10-07T10:00:00.000Z")',
+    'new Date("2026-10-07T10:00:00+05:30")',
+    'Date.parse("2026-10-07T10:00:00+03:00")',
+    "new Date(`${date}T00:00:00Z`)",
   ],
   invalid: [
     {
@@ -28,6 +33,18 @@ ruleTester.run("no-date-string-constructor", noDateStringConstructor, {
     {
       code: 'Date.parse("2026-10-07")',
       errors: [{ messageId: "noDateParse" }],
+    },
+    {
+      code: 'new Date("2026-10-07T10:00:00+0530")',
+      errors: [{ messageId: "noDateString" }],
+    },
+    {
+      code: 'new Date("Oct 7, 2026 10:00")',
+      errors: [{ messageId: "noDateString" }],
+    },
+    {
+      code: "new Date(`${date}T00:00`)",
+      errors: [{ messageId: "noDateString" }],
     },
   ],
 });
