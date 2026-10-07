@@ -2,7 +2,13 @@
   "name": "eslint-plugin-safe-dates",
   "version": "0.1.0",
   "description": "ESLint rules that prevent timezone bugs in JavaScript date handling",
-  "keywords": ["eslint", "eslintplugin", "eslint-plugin", "date", "timezone"],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "date",
+    "timezone"
+  ],
   "author": "Hariprasad M V",
   "license": "MIT",
   "type": "module",
@@ -12,13 +18,16 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=20.19"
   },
   "packageManager": "pnpm@11.7.0",
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --clean",
+    "prepack": "pnpm build",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
